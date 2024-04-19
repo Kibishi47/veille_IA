@@ -1,0 +1,16 @@
+@baseURL = http://localhost:3000
+
+###
+GET {{baseURL}}/api?param1=value1&param2=value2
+Authorization: Basic dXNlcm5hbWU6cGFzc3dvcmQ=
+###
+
+###
+POST {{baseURL}}/api
+Content-Type: application/json
+Authorization: Basic dXNlcm5hbWU6cGFzc3dvcmQ=
+
+{
+    "key": "value"
+}
+###
